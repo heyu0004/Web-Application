@@ -1,0 +1,47 @@
+<%include ../partials/header%>
+<div class="container">
+    <div class="row">
+        <h1 style="text-align:center;" >Create a new film</h1>
+        <div style="width:30% ;margin:25px auto;">
+            <form action="/films" method="POST">
+                <div class="form-group">
+                    <%if (film!=null&&film.Response=='True'){%>
+                    Title: <input class="form-control" type="text" name="name" value="<%=film.Title%>">
+                    <%}else{%>
+                    Title: <input class="form-control" type="text" name="name" placeholder="name">
+                    <%}%>
+                </div>
+                <div class="form-group">
+                    <%if (film!=null&&film.Response=='True'){%>
+                    <img calss="image-responsive" alt="<%=film.name%>" src="<%=film.Poster%>">
+                    <br>
+                    Poster: <input class="form-control" type="text" name="image" value="<%=film.Poster%>">
+                    <%}else{%>
+                    Poster: <input class="form-control" type="text" name="image" placeholder="image url">
+                    <%}%>
+                </div>
+                <div class="form-group">
+                    <%if (film!=null&&film.Response=='True'){%>
+                    Description: <input class="form-control" type="text" name="description" value="<%=film.Plot%>">
+                    <%}else{%>
+                    Description: <input class="form-control" type="text" name="description" placeholder="description">
+                    <%}%>
+                </div>
+                 <div class="form-group">
+                    <%if (film!=null&&film.Response=='True'){%>
+                    Year: <input class="form-control" type="number" name="year" min="1900" step="1" value="<%=film.Year%>">
+                    <%}else{%>
+                    Year: <input class="form-control" type="number" name="year" min="1900" step="1" placeholder="year">
+                    <%}%>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-large btn-block btn-primary" value="Submit">
+                </div>
+            </form>
+            <a href="/films">Back</a>
+        </div>
+        
+    </div>
+
+</div>
+<%include ../partials/footer%>

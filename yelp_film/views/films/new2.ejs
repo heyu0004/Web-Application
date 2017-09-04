@@ -1,0 +1,21 @@
+<%include ../partials/header%>
+<div class="container">
+    <div class="row">
+        <h1 style="text-align:center;" >Create a new film</h1>
+        <div style="width:30% ;margin:25px auto;">
+            <form action="/films/search" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="title" placeholder="title">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-large btn-block btn-primary" value="Search">
+                </div>
+            </form>
+            <a href="/films">Back</a>
+            <span style="float:right;"><a href="/films/new">No match,edit myself</a></span>
+        </div>
+        
+    </div>
+
+</div>
+<%include ../partials/footer%>
