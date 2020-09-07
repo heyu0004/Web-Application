@@ -1,0 +1,42 @@
+<%include ../partials/header%>
+<div class="container">
+    <div class="row">
+        <h1 style="text-align:center;" >Create a new film</h1>
+        <h5 style="text-align:center;">Match from OMDB API: total<%=film.length%></h5>
+        
+        <table class="table">
+            <thead class="thead-inverse">
+            <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Poster</th>
+            <th>Year</th>
+            <th>Select</th>
+            </tr>
+            </thead>
+            <%var count=0;%>
+            <tbody>
+            <%film.forEach(function(fm){%>
+            <%count++;%>
+            <tr>
+                <th scope="row"><%=count%></th>
+                <td><%=fm.Title%></td>
+                <td>
+                <img calss="image-responsive" alt="<%=film.name%>" src="<%=fm.Poster%>">
+                </td>
+                <td>
+                <%=fm.Year%>
+                </td>
+                <td>
+                <a href="/films/select/<%=fm.imdbID%>">Select</a> 
+                </td>
+            </tr>
+            <% }) %>
+        </tbody>   
+        </table>
+        <a href="/films">Back</a>
+        <span style="float:right;"><a href="/films/new">No match,edit myself</a></span>
+    </div>
+
+</div>
+<%include ../partials/footer%>

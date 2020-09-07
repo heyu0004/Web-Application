@@ -1,0 +1,183 @@
+extends layout
+
+block content
+    h1 Shopping Online
+    p#Welcome        
+    // Wrapper
+    #wrapper
+        
+        // LOG USER
+        div#LogUser
+            h2 Log User
+            #logUser
+                fieldset
+                    input#inputUserName2(type='text', placeholder='Username')
+                    input#inputUserPassword2(type='text', placeholder='Password')
+                    br
+                    button#btnLogUser Log User
+                    button#btnLogUserOff Log Off
+                    br
+        // /LOG USER
+        
+        // ADD USER
+        div#AddUser
+            h2 Register
+            #addUser
+                fieldset
+                    input#inputUserName(type='text', placeholder='Username')
+                    input#inputUserPassword(type='password', placeholder='Password')
+                    br
+                    input#inputUserLabel(type='text', placeholder='Label')
+                    input#inputUserCreditcard(type='text', placeholder='Creditcard')
+                    br
+                    input#inputUserEmail(type='text', placeholder='Email')
+                    br
+                    button#btnAddUser Register
+                    br
+        // /ADD USER
+    
+    
+    
+        // USER INFO
+        #userInfo
+            h2 User Info
+            p
+                strong Name:
+                |  <span id='userInfoName'></span>
+                br
+                strong Label:
+                |  <span id='userInfoLabel'></span>
+                br
+                strong Email:
+                |  <span id='userInfoEmail'></span>
+                br
+                strong Creditcard:
+                |  <span id='userInfoCreditcard'></span>
+        // /USER INFO
+
+        // USER LIST
+        div#UserList
+            h2 User List
+            #userList
+                table
+                    thead
+                        th UserName
+                        th Label
+                        th Message?
+                        th Email?
+                    tbody
+        // /USER LIST
+        
+        // ITEM INFO
+        #itemInfo
+            h2 Item Info
+            p
+                strong Name:
+                |  <span id='itemInfoName'></span>
+                br
+                strong Price:
+                |  <span id='itemInfoPrice'></span>
+                br
+                strong Seller:
+                |  <span id='itemInfoSeller'></span>
+                br
+                strong Category:
+                |  <span id='itemInfoCategory'></span>
+                br
+                strong Description:
+                |  <span id='itemInfoDescription'></span>
+            div#image
+        // /ITEM INFO
+        
+        // ITEM LIST
+        div#ItemList
+            h2 Item List
+            #itemList
+                p
+                    input#inputSearchCategory(type='text', placeholder='Category')
+                    button#btnSearch Search by Category
+                    button#btnShowall Showall
+                table
+                    thead
+                        th ItemName
+                        th Price
+                        th Seller
+                        th Category
+                        th Add?
+                    tbody
+        // /ITEM LIST
+        
+        // CART LIST
+        div#CartList
+        h2 Shopping Cart
+        #cartList
+            table
+                thead
+                    th ItemName
+                    th Price
+                    th Seller
+                    th Category
+                    th Delete?
+                tbody
+            p
+            button#btnOrder Place Order
+        // /CART LIST
+        
+        // ORDER HISTORY
+        div#OrderHistory
+        h2 Order History
+        #orderHistory
+            table
+                thead
+                    th ItemName
+                    th Price
+                    th Seller
+                    th Buyer
+                    th Category
+                    th Time
+                tbody
+        // /ORDER HISTORY
+        
+        // MESSAGE LIST
+        div#MessageList
+        h2 My Message
+        #messageList
+            table
+                thead
+                    th From
+                    th To
+                    th Message
+                    th Time
+                tbody
+        // /MESSAGE LIST
+        
+        // SELL LIST
+        div#SellList
+        h2 My Items on sale
+        #sellList
+            table
+                thead
+                    th ItemName
+                    th Price
+                    th Category
+                    th Delete?
+                tbody
+        // /SELL LIST
+
+        
+        // ADD SELL
+        div#AddSell
+            h2 Add Sell Item
+            #addSell
+                fieldset
+                    input#inputItemName(type='text', placeholder='Itemname')
+                    input#inputItemPrice(type='text', placeholder='Price')
+                    br
+                    input#inputItemCategory(type='text', placeholder='Category')
+                    input#inputItemDescription(type='text', placeholder='Description')
+                    br
+                    button#btnAddSellItem Add Item
+        // /ADD SELL
+        
+
+    // /WRAPPER

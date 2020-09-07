@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+<title> Calendar Home Page </title>
+<style type="text/css">
+body{
+    
+}
+#user_interaction{
+    text-align: left;
+	border: 1px solid black;
+	padding: 3px;
+	width: 400px;
+	position: absolute;
+    left: 785px;
+    top: 100px
+}
+#calendar{
+	text-align: center;
+	border: 1px solid black;
+	padding: 3px;
+	width: 720px;
+	position: absolute;
+    left: 40px;
+    top: 100px
+}
+#curmonth{
+	text-align: center;
+}
+tr#weekday{
+	font-weight: bold;
+}
+td{
+	text-align: center;
+	border: 1px solid black;
+	width: 14.2%;
+	height: 60px;
+}
+#last{
+	
+}
+#next{
+	
+}
+
+</style>
+</head>
+<body onpageshow="updateCalendar()" id="body">
+<h1 align="center">====Calendar====</h1>
+<script src="jquery.js"></script>
+<script>
+</script>
+<table id="calendar">
+	<tr>
+		<td> <button id="prev_month_btn" type="submit"> Last Month </button> </td>
+		<td colspan="5"> <B id="curmonth"> </B> </td>
+		<td> <button id="next_month_btn" type="submit"> Next Month </button> </td>
+	</tr>
+	<tbody id="tbodyid">
+		<tr id="weekday">
+			<td> Sunday </td>
+			<td> Monday </td>
+			<td> Tuesday </td>
+			<td> Wednesday </td>
+			<td> Thursday </td>
+			<td> Friday </td>
+			<td> Saturday </td>
+		</tr>
+		<tr id="week1">
+			<td class="week1">1</td>
+			<td class="week1">2</td>
+			<td class="week1">3</td>
+			<td class="week1">4</td>
+			<td class="week1">5</td>
+			<td class="week1">6</td>
+			<td class="week1">7</td>
+		</tr>
+		<tr id="week2">
+			<td class="week2"> 8</td>
+			<td class="week2"> 9</td>
+			<td class="week2"> 10</td>
+			<td class="week2"> 11</td>
+			<td class="week2"> 12</td>
+			<td class="week2"> 13</td>
+			<td class="week2"> 14</td>
+		</tr>
+		<tr id="week3">
+			<td class="week3"> 15</td>
+			<td class="week3"> 16</td>
+			<td class="week3"> 17</td>
+			<td class="week3"> 18</td>
+			<td class="week3"> 19</td>
+			<td class="week3"> 20</td>
+			<td class="week3"> 21</td>
+		</tr>
+		<tr id="week4">
+			<td class="week4"> 22</td>
+			<td class="week4"> 23</td>
+			<td class="week4"> 24</td>
+			<td class="week4"> 25</td>
+			<td class="week4"> 26</td>
+			<td class="week4"> 27</td>
+			<td class="week4"> 28</td>
+		</tr>
+		<tr id="week5">
+			<td class="week5"> 29</td>
+			<td class="week5"> 30</td>
+			<td class="week5"> 31</td>
+			<td class="week5"> </td>
+			<td class="week5"> </td>
+			<td class="week5"> </td>
+			<td class="week5"> </td>
+		</tr>
+		<tr id="week6">
+			<td class="week6"> </td>
+			<td class="week6"> </td>
+			<td class="week6"> </td>
+			<td class="week6"> </td>
+			<td class="week6"> </td>
+			<td class="week6"> </td>
+			<td class="week6"> </td>
+		</tr>
+	</tbody>
+	
+</table>
+<div id="user_interaction">
+<h3 id="welcome_header">Welcome, visitor</h3>
+<p><label>username <input type="text" id="username" placeholder="Username" /></label></p>
+<p><label>password <input type="password" id="password" placeholder="Password" /></label></p>
+<p><button id="login_btn">Log in</button>
+<button id="register_btn">Register</button>
+<button id="logoff_btn">Log off</button></p>
+
+<label><p>Event</p><span id="eventbox"><textarea id="add_event" style="width:250px;height:50px;" placeholder="add/edit event"></textarea></span></label>
+<p><label>time<input type="time" id="add_time"/></label>
+<label>day<input type="number" id="add_day" min="1" max="31"></label>
+<label>month<input type="number" id="add_month" min="1" max="12"></label></p>
+<p><label>event_id<input type="number" id="event_id" placeholder="1,2..."/></label>
+<label>event_tag<input type="text" id="tag" placeholder="any word as a tag"/></label></p>
+<p><label>Share calendar with : <input type="text" id="user2" placeholder="User2" /></label></p>
+
+<p><button id="add_btn">add event</button> <small>( fill in event,time, day, month )</small></p>
+<p><button id="delete_btn">delete event</button> <small>( fill in event_id only )</small></p>
+<p><button id="edit_btn">edit event</button> <small>( fill in event_id and its content and time )</small> </p>
+<p><button id="addtag_btn">add tag</button> <small>( fill in event_id and event_tag )</small> </p>
+<p><button id="droptag_btn">drop tag</button> <small>( fill in event_id only )</small></p>
+<p><button id="showtag_btn">show tagged events only</button><button id="showall_btn">show all events</button></p>
+<p><button id="share_btn">share event</button><small>( fill in user2 in 'share calendar with user:' only )</small></p>
+
+</div>	
+
+
+
+<script type="text/javascript" src="updatecalendar.js"></script>
+
+</body>
+</html>

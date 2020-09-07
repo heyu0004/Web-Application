@@ -1,0 +1,255 @@
+body {
+  padding: 30px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+	margin:0 0 .5em 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#wrapper {
+	padding-left:312px;
+	
+}
+
+#LogUser{
+    position:absolute;
+	width:350px;
+	top:140px; left:40px;
+}
+
+#AddUser{
+    position:absolute;
+	width:350px;
+	top:250px; left:40px;
+}
+
+#AddSell{
+    position:absolute;
+	width:350px;
+	top:450px; left:40px;
+}
+
+#userInfo {
+    position:absolute;
+	width:350px;
+	top:140px; left:870px;
+}
+	#userInfo p {
+		padding:15px;
+		border:1px solid #CCC;
+		background:rgba(80,120,255,0.05);
+	}
+fieldset {
+	border:0;
+	padding:0; margin:0;
+}
+
+
+#userList {
+	margin:0 0 30px 0;
+}
+	#userList table {
+		border-collapse:separate;
+		border-spacing:1px;
+		background:#CCC;
+	}
+		#userList table th {
+			background:#EEE;
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;
+		}
+		#userList table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+			#userList table td {
+				background:#FFF;
+				padding:5px 10px;
+				text-align:center;
+			}
+
+
+#itemInfo {
+    position:absolute;
+	width:350px;
+	top:320px; left:870px;
+}
+	#itemInfo p {
+		padding:15px;
+		border:1px solid #CCC;
+		background:rgba(80,120,255,0.05);
+	}
+
+fieldset {
+	border:0;
+	padding:0; margin:0;
+}
+
+
+			
+#itemList {
+	margin:0 0 30px 0;
+}
+	#itemList table {
+		border-collapse:separate;
+		border-spacing:1px;
+		background:#CCC;
+	}
+		#itemList table th {
+			background:#EEE;
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;
+		}
+		#itemList table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+			#itemList table td {
+				background:#FFF;
+				padding:5px 10px;
+				text-align:center;
+			}
+			
+#cartList {
+	margin:0 0 30px 0;
+}
+	#cartList table {
+		border-collapse:separate;
+		border-spacing:1px;
+		background:#CCC;
+	}
+		#cartList table th {
+			background:#EEE;
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;
+		}
+		#cartList table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+			#cartList table td {
+				background:#FFF;
+				padding:5px 10px;
+				text-align:center;
+			}
+
+
+#sellList {
+	margin:0 0 30px 0;
+}
+	#sellList table {
+		border-collapse:separate;
+		border-spacing:1px;
+		background:#CCC;
+	}
+		#sellList table th {
+			background:#EEE;
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;
+		}
+		#sellList table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+			#sellList table td {
+				background:#FFF;
+				padding:5px 10px;
+				text-align:center;
+			}
+
+
+#orderHistory {
+	margin:0 0 30px 0;
+}
+	#orderHistory table {
+		border-collapse:separate;
+		border-spacing:1px;
+		background:#CCC;
+	}
+		#orderHistory table th {
+			background:#EEE;
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;
+		}
+		#orderHistory table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+			#orderHistory table td {
+				background:#FFF;
+				padding:5px 10px;
+				text-align:center;
+			}
+
+#messageList {
+	margin:0 0 30px 0;
+}
+	#messageList table {
+		border-collapse:separate;
+		border-spacing:1px;
+		background:#CCC;
+	}
+		#messageList table th {
+			background:#EEE;
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;
+		}
+		#messageList table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+			#messageList table td {
+				background:#FFF;
+				padding:5px 10px;
+				text-align:center;
+			}
+
+
+/* 
+#image {
+    width: 80px;
+    height: 50px;
+    background-color: white;
+    font-weight: bold;
+    position: absolute;
+    -webkit-animation: mymove 5s infinite; Chrome, Safari, Opera    animation: mymove 5s infinite;
+    }
+ */
+
+
+/* Chrome, Safari, Opera */
+#image {-webkit-animation-timing-function: linear;}
+
+
+/* Standard syntax */
+#image {animation-timing-function: linear;}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 870px;}
+    to {left: 900px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+

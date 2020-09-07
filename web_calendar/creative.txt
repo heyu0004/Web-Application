@@ -1,0 +1,15 @@
+Yu He 445576
+Drew Kaplan 442249
+
+Link: http://ec2-54-174-194-113.compute-1.amazonaws.com/~yuhe/calendarpage.html
+
+Description: 
+1) We added the ability to share your calendar with another user. You input the username of the person you want to share your calendar with (called User2 from here on)
+and press the share calendar button. User2 will now see all of your events with (Shared) in front of the name of the event to show that it is a shared
+event. We achieved this by creating a seperate table titled "shared events" that stores User2's username and all of the event IDs of your events. In order to show
+User2 your event's information we ran a join query between the events table and the shared events table to print out all of the rows in the shared events table 
+that have User2's username and the event information from the events table.
+
+2) We added the functionality to tag events and only display certained tagged events. You can choose to add a tag when creating an event or add on later. 
+You can show events from one tag by inputing the tag name and click show tagged events. You can switch back to seeing all events simply by clicking the see 
+all events button. You can also drop a tag from an event. 

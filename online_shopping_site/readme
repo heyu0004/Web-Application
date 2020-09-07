@@ -1,0 +1,6 @@
+A shopping site model
+
+use
+>npm install
+>npm start 
+to run the application and default port is 3000.
